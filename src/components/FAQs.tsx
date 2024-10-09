@@ -6,24 +6,19 @@ import clsx from "clsx";
 import {motion , AnimatePresence} from 'framer-motion';
 const items = [
   {
-    question: "What payment methods do you accept?",
+    question: "Why should you use VisaLink?",
     answer:
-      "We accept all major credit cards, PayPal, and various other payment methods depending on your location. Please contact our support team for more information on accepted payment methods in your region.",
+      "A large part of the US work visa application/management process is tediously manual, costly, and unnecessarily time consuming. Companies using VisaLink can begin the visa petitioning process right away without having to wait for a case manager or any onboarding. As a SaaS product, we are also able to have a more transparent and affordable pricing model that isn't \"case by case\" as most competitors do. Companies can now also track in real time the visa status of their current employees and new candidates which is a pain point that we identified particularly for large organizations.",
   },
   {
-    question: "How does the pricing work for teams?",
+    question: "Why does VisaLink work?",
     answer:
-      "Our pricing is per user, per month. This means you only pay for the number of team members you have on your account. Discounts are available for larger teams and annual subscriptions.",
+      "Many work visa types such as the TN visa, E-3 visa, require a very standardized set of documents such that the process for applying to these visas can be easily automated. Based on our research, failures or rejections to these visas happen for easily fixable reasons such as typos and field mismatches, things our AI can detect.",
   },
   {
-    question: "Can I change my plan later?",
+    question: "Why not stick to the traditional way of work visa sponsorships?",
     answer:
-      "Yes, you can upgrade or downgrade your plan at any time. Changes to your plan will be prorated and reflected in your next billing cycle.",
-  },
-  {
-    question: "Is my data secure?",
-    answer:
-      "Security is our top priority. We use state-of-the-art encryption and comply with the best industry practices to ensure that your data is stored securely and accessed only by authorized users.",
+      "Legal fees can start at $5,000 and quickly reach $15,000 or more for each visa (source: Rippling). Not to mention, the complete delegation of work to 3rd parties leaves you effectively blind towards the state of the process at any time. Why waste weeks of waiting for an update by a lawyer when you can actually have a new hire start working instantly?",
   },
 ];
 
@@ -56,7 +51,7 @@ const AccordinationItem = ({question, answer}:{question:string, answer: string})
 
 export const FAQs = () => {
   return (
-    <div className="bg-black text-white py-[72px] sm:py-24 bg-gradient-to-b from-[#5D2CA8] to-black ">
+    <div id="faq" className="bg-black text-white py-[72px] sm:py-24 bg-gradient-to-b from-[#003366] to-black ">
       <div className="container">
         <h2 className="text-5xl sm:text-6xl sm:w-[648px] mx-auto text-center text-white tracking-tighter">
           Frequently Asked Questions

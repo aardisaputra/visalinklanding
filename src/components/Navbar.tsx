@@ -13,7 +13,7 @@ export const Navbar = () => {
       <div className="relative">
         <div className='absolute w-full top-2 bottom-0 bg-[linear-gradient(to_right,#F7AABE,#B57CEC,#E472D1)] blur-md '></div>
 
-      <LogoImage className="h-12 w-12 relative mt-1"/>
+      {/* <LogoImage className="h-12 w-12 relative mt-1"/> */}
       </div>
       <div className='border border-white border-opacity-30 h-10 w-10 inline-flex justify-center items-center rounded-lg sm:hidden'>
 
@@ -21,12 +21,10 @@ export const Navbar = () => {
       </div>
       <nav className='text-white gap-6 items-center hidden sm:flex'>
         
-        <a href="#" className='text-opacity-60 text-white hover:text-opacity-100 transition' >About</a>
-        <a href="#" className='text-opacity-60 text-white hover:text-opacity-100 transition'>Features</a>
-        <a href="#" className='text-opacity-60 text-white hover:text-opacity-100 transition'>Updates</a>
-        <a href="#" className='text-opacity-60 text-white hover:text-opacity-100 transition'>Help</a>
-        <a href="#" className='text-opacity-60 text-white hover:text-opacity-100 transition'>Customers</a>
-        <button className='bg-white py-2 px-4 rounded-lg text-black'>Get for free</button>
+        <a href="#demo" className='text-opacity-60 text-white hover:text-opacity-100 transition' >Demo</a>
+        <a href="#faq" className='text-opacity-60 text-white hover:text-opacity-100 transition'>FAQ</a>
+        <a href="#contact" className='text-opacity-60 text-white hover:text-opacity-100 transition'>Contact Us</a>
+         <a href="https://forms.gle/PGPomN7oAHzYTJ3j9"><button className='bg-white py-2 px-4 rounded-lg text-black'>Sign up here!</button></a>
       </nav>
 
       </div>
