@@ -206,6 +206,7 @@ const BentoBox1 = () => {
                 src="/dashboard.png"
                 width={200}
                 height={50}
+                alt={"Dashboard"}
                 className="rounded-lg w-full object-cover"
               />
             </div>
@@ -214,6 +215,7 @@ const BentoBox1 = () => {
                 src="/tn_app.png"
                 width={250}
                 height={50}
+                alt={"TN App"}
                 className="rounded-lg w-full object-cover"
               />
             </div>
