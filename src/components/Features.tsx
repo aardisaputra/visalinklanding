@@ -2,7 +2,7 @@ import Bentodemo from "./bentogrid";
 
 export const Features = () => {
   return (
-    <div className="bg-black text-white py-[72px] sm:pt-24 sm:pb-24 md:pb-0 lg:pb-0">
+    <div className="bg-[linear-gradient(to_bottom,#000,_34%,#003366_70%,#003366_82%)] bg-black text-white py-[72px] sm:pt-24 sm:pb-24 md:pb-0 lg:pb-0">
       <div className="container">
         <h2 className="text-center font-bold text-5xl sm:text-6xl tracking-tighter">
           Everything you need{" "}

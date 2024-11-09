@@ -18,9 +18,9 @@ export default function Home() {
         <Hero />
 
         <Features />
-        <div>
+        {/* <div>
           <ProductShowcase />
-        </div>
+        </div> */}
 
         <FAQs />
         {/* <Pricing/> */}

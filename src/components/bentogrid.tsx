@@ -178,7 +178,7 @@ const BentoBox1 = () => {
   }, [chartRef]);
 
   return (
-    <div className="bg-[#000000] flex justify-center items-center min-h-[800px] p-5 rounded-lg sm:py-24 xl:mt-[15rem]">
+    <div className="bg-gradient-to-[#003366] from-black flex justify-center items-center min-h-[800px] p-5 rounded-lg sm:py-24 xl:mt-[15rem]">
       <div className="flex flex-col md:flex-row gap-4 w-full max-w-7xl min-h-[800px] md:min-h-[800px] md:h-[800px]">
         <div className="flex flex-col w-full md:w-1/2 gap-5 h-full md:h-[800px]">
           <CardWithEffect>
@@ -238,7 +238,7 @@ const BentoBox1 = () => {
 
 function Bentodemo() {
   return (
-    <div className="h-screen flex items-center justify-center  ">
+    <div className="h-screen flex items-center justify-center bg-gradient-to-[#003366] from-black">
       <BentoBox1 />
     </div>
   );
