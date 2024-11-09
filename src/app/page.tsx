@@ -9,23 +9,23 @@ import { CallToAction } from "@/components/CallToAction";
 import { Footer } from "@/components/Footer";
 import { Pricing } from "@/components/Pricingdemo";
 
-
 export default function Home() {
   return (
     <>
-    <div className="overflow-x-hidden">
-      {/* <Banner /> */}
-      <Navbar />
-      <Hero />
-      
-      <ProductShowcase />
-      {/* <Features /> */}
-      
-      
-      <FAQs />
-      {/* <Pricing/> */}
-     
-      <CallToAction />
+      <div className="overflow-x-hidden">
+        {/* <Banner /> */}
+        <Navbar />
+        <Hero />
+
+        <Features />
+        <div>
+          <ProductShowcase />
+        </div>
+
+        <FAQs />
+        {/* <Pricing/> */}
+
+        <CallToAction />
       </div>
       <Footer />
     </>

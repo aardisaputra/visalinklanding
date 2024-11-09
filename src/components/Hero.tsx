@@ -17,8 +17,7 @@ export const Hero = () => {
         <div className="flex items-center justify-center -mt-10"></div>
         <div className="flex justify-center mt-8 ">
           <div className="inline-flex relative">
-            <h1 className="text-7xl sm:text-9xl font-bold tracking-tightner text-center inline-flex mb-2">
-              <br />
+            <h1 className="text-7xl sm:text-9xl font-bold tracking-tightner text-center inline-flex mb-2 mt-4">
               VisaLink <br />
             </h1>
           </div>
