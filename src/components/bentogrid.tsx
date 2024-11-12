@@ -135,13 +135,13 @@ const AWSIcon = () => {
         </div>
       </div>
 
-      <div className="text-left p-6 mt-4 md:pb-[3rem] lg:pb-0">
+      <div className="text-left p-6 mt-4 md:pb-[3rem] lg:pb-[3rem]">
         <h1 className="text-white text-2xl font-bold mb-2">
-          Diverse array of choices
+          Diverse array of visa choices
         </h1>
-        <p className="text-gray-400 text-lg">
+        {/* <p className="text-gray-400 text-lg">
           whatever visa you need, we got it!
-        </p>
+        </p> */}
       </div>
     </div>
   );
@@ -192,8 +192,8 @@ const BentoBox1 = () => {
                   Live Support
                 </h1>
                 <p className="text-white/70 text-lg">
-                  Ever need help from an actual person? We have immigration
-                  lawyers who will help!
+                  Connect with our team of immigration attorneys for
+                  personalized assistance whenever you need it.
                 </p>
               </div>
             </div>
@@ -201,7 +201,7 @@ const BentoBox1 = () => {
         </div>
         <CardWithEffect>
           <div className="flex flex-col justify-between h-full flex-1">
-            <div className="mb-[5%] px-[16%] md:px-[5%] md:pt-[5%] lg:px-[16%] lg:pt-0">
+            <div className="mb-[5%] px-[16%] md:px-[5%] md:pt-[5%] lg:px-[20%] lg:pt-0">
               <Image
                 src="/dashboard.png"
                 width={200}
@@ -210,7 +210,7 @@ const BentoBox1 = () => {
                 className="rounded-lg w-full object-cover"
               />
             </div>
-            <div className="mb-[5%] px-[16%] md:px-[5%] lg:px-[16%]">
+            <div className="mb-[5%] px-[16%] md:px-[5%] lg:px-[20%]">
               <Image
                 src="/tn_app.png"
                 width={250}
@@ -224,9 +224,9 @@ const BentoBox1 = () => {
                 User-friendly UI
               </h1>
               <p className="text-white/70 text-lg">
-                Easily navigate our platform which lets you start and complete a
-                visa application. Track your non-immigrant employee visa
-                statuses
+                Navigate our platform with ease as you initiate and complete
+                visa applications, while tracking employee visa statuses
+                seamlessly
               </p>
             </div>
           </div>

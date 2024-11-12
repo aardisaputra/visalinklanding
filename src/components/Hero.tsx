@@ -24,11 +24,9 @@ export const Hero = () => {
         </div>
         <div className="flex justify-center">
           <p className="text-xl text-center mt-8 max-w-[29rem]">
-            Don&apos;t let time and costs be a barrier to hiring talent!
-            Effortlessly start and complete work visa applications for new
-            hires, track your employees&apos; visa statuses in real-time, and
-            receive timely alerts for upcoming visa expirations—all through our
-            AI-powered platform.
+            Effortlessly manage work visa applications for new hires, monitor
+            visa statuses in real-time, and receive timely expiration alerts—all
+            with our AI-powered platform
           </p>
         </div>
         <div className="flex justify-center mt-8">
