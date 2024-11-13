@@ -33,8 +33,8 @@ export const CallToAction = () => {
         <h2 className="font-bold text-5xl sm:text-6xl tracking-tighter">
           Got Any Questions?
         </h2>
-        <p className="text-xl text-white/70  mt-5">
-          Reach out to our emails here: <br /> support@visalink.live
+        <p className="text-xl text-white/70  mt-5 hover:text-blue-200">
+          <a href="mailto:support@visalink.live">support@visalink.live</a>
         </p>
         <div className="flex justify-center mt-8">
           <a href="https://forms.gle/PGPomN7oAHzYTJ3j9">
