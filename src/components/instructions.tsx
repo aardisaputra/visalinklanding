@@ -35,7 +35,7 @@ const data = [
 
 export function Instructions() {
   return (
-    <Carousel className="w-full max-w-5xl">
+    <Carousel className="w-full max-w-l mx-[8em] md:max-w-5xl">
       <CarouselContent>
         {Array.from({ length: 4 }).map((_, index) => (
           <CarouselItem key={index}>
@@ -44,9 +44,9 @@ export function Instructions() {
                 STEP {index + 1}/4: {data[index][1]}
               </h2>
               <br />
-              <Card className="h-[400px] shadow-none border-none">
+              <Card className="h-[500px] md:h-[400px] shadow-none border-none">
                 <CardContent className="flex items-center justify-center p-6 h-full">
-                  <div className="flex items-center justify-center space-x-8">
+                  <div className="flex flex-col md:flex-row items-center justify-center space-x-8 space-y-8 md:space-y-0">
                     <Image
                       className="shadow-lg rounded-md"
                       src={data[index][0]}
@@ -62,8 +62,8 @@ export function Instructions() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="left-0 md:left-[-4em]" />
+      <CarouselNext className="right-0 md:right-[-4em]" />
     </Carousel>
   );
 }

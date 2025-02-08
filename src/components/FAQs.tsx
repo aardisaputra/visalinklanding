@@ -32,7 +32,7 @@ const AccordinationItem = ({
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className=" py-7 border-b border-white/30"
+      className="px-7 py-7 border-b border-white/30"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center ">
@@ -56,7 +56,7 @@ const AccordinationItem = ({
 
 export const FAQs = () => {
   return (
-    <div className="flex flex-col lg:flex-row justify-center lg:items-start max-w-7xl">
+    <div className="flex flex-col lg:flex-row justify-center lg:items-start max-w-7xl px-8em">
       <h2 className="text-4xl sm:w-[648px] mt-[8rem] md:mt-0 lg:pt-0 lg:mt-[3em] mx-auto text-center">
         {`Frequently Asked Questions`.split(" ").map((word, index) => (
           <span key={index} className="block">
@@ -64,7 +64,7 @@ export const FAQs = () => {
           </span>
         ))}
       </h2>
-      <div className="mt-12 max-w-[648px] mx-auto">
+      <div className="mt-12 max-w-[648px] md:mx-auto">
         {items.map(({ question, answer }) => (
           <AccordinationItem
             question={question}

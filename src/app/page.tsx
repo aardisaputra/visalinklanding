@@ -56,7 +56,7 @@ export default function Home() {
         <br />
 
         {/* Instructions Section */}
-        <div className="max-w-full mx-auto p-8 bg-white shadow-lg">
+        <div className="md:max-w-full mx-auto p-8 bg-white shadow-lg">
           <div className="flex justify-center text-4xl py-4">
             Simple steps in filing a work visa application
           </div>
@@ -73,7 +73,7 @@ export default function Home() {
         <br />
 
         {/* Call to action */}
-        <div className="max-w-6xl mx-auto p-6 bg-black shadow-lg rounded-xl">
+        <div className="max-w-6xl mx-8 lg:mx-auto p-6 bg-black shadow-lg rounded-xl">
           <div className="flex justify-center text-xl text-white">
             Let&apos;s help you assemble your all-star team!
           </div>
