@@ -56,23 +56,22 @@ const AccordinationItem = ({
 
 export const FAQs = () => {
   return (
-    <div
-      id="faq"
-      className="bg-black text-white py-[12rem] sm:py-24 bg-gradient-to-b from-[#003366] to-black "
-    >
-      <div className="container">
-        <h2 className="text-5xl sm:text-6xl sm:w-[648px] mt-[8rem] md:mt-[0em] lg:pt-[0em] lg:mt-[2em] mx-auto text-center text-white tracking-tighter">
-          Frequently Asked Questions
-        </h2>
-        <div className="mt-12 max-w-[648px] mx-auto">
-          {items.map(({ question, answer }) => (
-            <AccordinationItem
-              question={question}
-              answer={answer}
-              key={question}
-            />
-          ))}
-        </div>
+    <div className="flex flex-col lg:flex-row justify-center lg:items-start max-w-7xl">
+      <h2 className="text-4xl sm:w-[648px] mt-[8rem] md:mt-0 lg:pt-0 lg:mt-[3em] mx-auto text-center">
+        {`Frequently Asked Questions`.split(" ").map((word, index) => (
+          <span key={index} className="block">
+            {word}
+          </span>
+        ))}
+      </h2>
+      <div className="mt-12 max-w-[648px] mx-auto">
+        {items.map(({ question, answer }) => (
+          <AccordinationItem
+            question={question}
+            answer={answer}
+            key={question}
+          />
+        ))}
       </div>
     </div>
   );

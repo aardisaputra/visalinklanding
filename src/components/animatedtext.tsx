@@ -1,23 +1,35 @@
-"use client"
-import { ChevronRight } from "lucide-react";
+"use client";
 
-import { cn } from "../components/lib/utils";
-import AnimatedGradientText from "./animatedgradienttext";
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { DM_Sans } from "next/font/google";
 
-export function AnimatedGradientTextDemo() {
+const textOptions = ["H1-B", "O-1", "B-1"];
+
+export default function AnimatedText() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % textOptions.length);
+    }, 3000); // Change text every 3 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <div className="z-10 flex -mt-9 items-center justify-center">
-      <AnimatedGradientText>
-        🎉 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
-        <span
-          className={cn(
-            `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
-          )}
-        >
-          Version 2.0 is here
-        </span>
-        <ChevronRight className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-      </AnimatedGradientText>
-    </div>
+    <AnimatePresence mode="wait">
+      <motion.h1
+        key={textOptions[index]}
+        className=""
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.6 }}
+      >
+        {textOptions[index]}
+      </motion.h1>
+    </AnimatePresence>
   );
 }
