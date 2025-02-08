@@ -9,7 +9,8 @@ export const Features = () => {
         </h2>
         <div className="max-w-xl mx-auto">
           <p className="text-center mt-5 text-xl text-white/70">
-            Options for almost all visa categories, live human support
+            Comprehensive support across all visa categories, with live
+            assistance from experienced immigration professionals
           </p>
         </div>
         <div className="flex flex-col items-center justify-center sm:flex-row gap-4 md:mt-[0em] sm:mt-[8rem] mt-[20rem]">
